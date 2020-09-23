@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Monitoring Pengiriman Barang</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- awal navbar -->
+
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="img/Group 42.png" width="100px" />
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Services
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="services.html">Registrasi</a>
+                            <a class="dropdown-item" href="tracking_area.html">Tracking Area</a>
+                            <a class="dropdown-item" href="informasi_biaya.html">informasi biaya</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="profile.html">Company Profile</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile button -->
+                <form class="form-inline d-sm-block d-md-none">
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#login">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8.146 11.354a.5.5 0 0 1 0-.708L10.793 8 8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 1 8z" />
+                            <path fill-rule="evenodd"
+                                d="M13.5 14.5A1.5 1.5 0 0 0 15 13V3a1.5 1.5 0 0 0-1.5-1.5h-8A1.5 1.5 0 0 0 4 3v1.5a.5.5 0 0 0 1 0V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5h-8A.5.5 0 0 1 5 13v-1.5a.5.5 0 0 0-1 0V13a1.5 1.5 0 0 0 1.5 1.5h8z" />
+                        </svg>
+                    </button>
+                </form>
+                <!-- Desktop Button -->
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#login">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8.146 11.354a.5.5 0 0 1 0-.708L10.793 8 8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 1 8z" />
+                            <path fill-rule="evenodd"
+                                d="M13.5 14.5A1.5 1.5 0 0 0 15 13V3a1.5 1.5 0 0 0-1.5-1.5h-8A1.5 1.5 0 0 0 4 3v1.5a.5.5 0 0 0 1 0V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5h-8A.5.5 0 0 1 5 13v-1.5a.5.5 0 0 0-1 0V13a1.5 1.5 0 0 0 1.5 1.5h8z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-- akhir navbar -->
+
+    <!-- awal jumbotron -->
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-7">
+                    <h3 style="margin-bottom: -15px;">Sistem</h3>
+                    <br />
+                    <h1>Service Monitoring Pengiriman Barang Sriwijaya Air</h1>
+                    <p style="font-style: italic;">
+                        Selamat Datang di Sistem Monitoring Pengiriman Barang dari
+                        Mahasiswa Universitas Muhammadiyah Tangerang
+                    </p>
+                    <a href="#" class="btn btn-warning text-white mt-3">Let's Get Start</a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                    <img src="img/3.png" style="height: 350px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- akhit jumbotron -->
+
+    <!-- awal header -->
+
+    <header class="text-center">
+        <h1>
+            Services
+        </h1>
+        <hr style="width: 200px; margin-bottom: 50px;" />
+    </header>
+
+    <!-- akhir header -->
+
+    <!-- awal service -->
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-md-5 col-lg-3">
+                    <div class="card text-center" style="width: 17rem;">
+                        <img src="img/online_register.png" class="card-img-top"
+                            style="height: 130px; width: 130px; margin-left: 70px; margin-top: 10px;" />
+                        <div class="card-body">
+                            <h5 class="card-title">Registrasi</h5>
+                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                                data-target="#registrasi">Registrasi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-5 col-lg-3">
+                    <div class="card text-center" style="width: 17rem;">
+                        <img src="img/1.png" class="card-img-top"
+                            style="height: 130px; width: 130px; margin-left: 70px; margin-top: 10px;" />
+                        <div class="card-body">
+                            <h5 class="card-title">Tracking Area</h5>
+                            <a href="tracking_area.html" class="btn btn-primary">Tracking Area</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-5 col-lg-3">
+                    <div class="card text-center" style="width: 17rem;">
+                        <img src="img/2.png" class="card-img-top"
+                            style="height: 130px; width: 130px; margin-left: 70px; margin-top: 10px;" />
+                        <div class="card-body">
+                            <h5 class="card-title">Informasi Biaya</h5>
+                            <a href="informasi_biaya.html" class="btn btn-primary">informasi biaya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-5 col-lg-3">
+                    <div class="card text-center" style="width: 17rem;">
+                        <img src="img/12.png" class="card-img-top"
+                            style="height: 130px; width: 130px; margin-left: 70px; margin-top: 10px;" />
+                        <div class="card-body">
+                            <h5 class="card-title">Lain-lainnya</h5>
+                            <a href="#" class="btn btn-primary">Lain-lainnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- akhir service -->
+
+    <!-- awal footer -->
+
+    <footer class="section-footer mt-5 mb-4 border-top">
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-lg-3">
+                                    <h5>Layanan</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">Pengiriman Barang</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tracking Area</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Informasi Biaya</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <h5>Kemitraan</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Lowongan Kerja</a></li>
+                                        <li><a href="#">Daftar Promo</a></li>
+                                        <li><a href="#">Pelanggan</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <h5>Informasi Umum</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Profile Perusahaan</a></li>
+                                        <li><a href="#">Perusahaab Rekanan</a></li>
+                                        <li><a href="#">Media</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <h5>Get Connected</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Tangerang Kota</li>
+                                        <li>Indonesia</li>
+                                        <li>0821 - 2222 - 8888</li>
+                                        <li>support@skripsi.sriwijayaair.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center pt-4">
+                <div class="col-auto text-gray-500 font-weight-light text-center">
+                    2020 &copy; Copyright skripsi.sriwijaya air • All rights reserved •
+                    Made in Tangerang
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- akhir footer -->
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.354 11.354a.5.5 0 0 0 0-.708L1.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z" />
+                            <path fill-rule="evenodd"
+                                d="M11.5 8a.5.5 0 0 0-.5-.5H2a.5.5 0 0 0 0 1h9a.5.5 0 0 0 .5-.5z" />
+                            <path fill-rule="evenodd"
+                                d="M14 13.5a1.5 1.5 0 0 0 1.5-1.5V4A1.5 1.5 0 0 0 14 2.5H7A1.5 1.5 0 0 0 5.5 4v1.5a.5.5 0 0 0 1 0V4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H7a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 0-1 0V12A1.5 1.5 0 0 0 7 13.5h7z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8.146 11.354a.5.5 0 0 1 0-.708L10.793 8 8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 1 8z" />
+                            <path fill-rule="evenodd"
+                                d="M13.5 14.5A1.5 1.5 0 0 0 15 13V3a1.5 1.5 0 0 0-1.5-1.5h-8A1.5 1.5 0 0 0 4 3v1.5a.5.5 0 0 0 1 0V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5h-8A.5.5 0 0 1 5 13v-1.5a.5.5 0 0 0-1 0V13a1.5 1.5 0 0 0 1.5 1.5h8z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Registrasi-->
+    <div class="modal fade" id="registrasi" tabindex="-1" role="dialog" aria-labelledby="registrasiLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registrasiLabel">Registrasi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Re-Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Re-Password">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.354 11.354a.5.5 0 0 0 0-.708L1.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z" />
+                            <path fill-rule="evenodd"
+                                d="M11.5 8a.5.5 0 0 0-.5-.5H2a.5.5 0 0 0 0 1h9a.5.5 0 0 0 .5-.5z" />
+                            <path fill-rule="evenodd"
+                                d="M14 13.5a1.5 1.5 0 0 0 1.5-1.5V4A1.5 1.5 0 0 0 14 2.5H7A1.5 1.5 0 0 0 5.5 4v1.5a.5.5 0 0 0 1 0V4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H7a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 0-1 0V12A1.5 1.5 0 0 0 7 13.5h7z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8.146 11.354a.5.5 0 0 1 0-.708L10.793 8 8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 1 8z" />
+                            <path fill-rule="evenodd"
+                                d="M13.5 14.5A1.5 1.5 0 0 0 15 13V3a1.5 1.5 0 0 0-1.5-1.5h-8A1.5 1.5 0 0 0 4 3v1.5a.5.5 0 0 0 1 0V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5h-8A.5.5 0 0 1 5 13v-1.5a.5.5 0 0 0-1 0V13a1.5 1.5 0 0 0 1.5 1.5h8z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+</script>
+
+</html>

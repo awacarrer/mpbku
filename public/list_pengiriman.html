@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Monitoring Pengiriman Barang</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- awal navbar -->
+
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="img/Group 42.png" width="100px" />
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="navbardrop" data-toggle="dropdown">
+                            Services
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="services.html">Registrasi</a>
+                            <a class="dropdown-item" href="services.html">Tracking Area</a>
+                            <a class="dropdown-item" href="services.html">informasi biaya</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="profile.html">Company Profile</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile button -->
+                <form class="form-inline d-sm-block d-md-none">
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#login">
+                        Masuk
+                    </button>
+                </form>
+                <!-- Desktop Button -->
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#login">
+                        Masuk
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-- akhir navbar -->
+
+    <!-- awal jumbotron -->
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-7">
+                    <h3 style="margin-bottom: -15px;">Sistem</h3>
+                    <br />
+                    <h1>Monitoring Pengiriman Barang Sriwijaya Air</h1>
+                    <p style="font-style: italic;">
+                        Selamat Datang di Sistem Monitoring Pengiriman Barang dari
+                        Mahasiswa Universitas Muhammadiyah Tangerang
+                    </p>
+                    <a href="#" class="btn btn-warning text-white mt-3">Let's Get Start</a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                    <img src="img/BN.png" style="height: 400px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- akhit jumbotron -->
+
+    <!-- awal header -->
+
+    <header class="text-center">
+        <h4>
+            History Pengiriman Barang
+        </h4>
+        <hr style="width: 200px; margin-bottom: 50px;" />
+    </header>
+
+    <!-- akhir header -->
+
+    <!-- awal history pengiriman barang -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-12">
+                    <h6>Daftar Riwayat Pengiriman Yang Anda Lakukan</h6>
+                    <table class="table table-hover text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">No.Pengiriman</th>
+                                <th scope="col">No.Resi</th>
+                                <th scope="col">Tanggal Pengiriman</th>
+                                <th scope="col">Nama Penerima</th>
+                                <th scope="col">Tujuan Penerima</th>
+                                <th scope="col">Opsi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1017</th>
+                                <td>DYEG340392</td>
+                                <td>16-07-2020</td>
+                                <td>dimashudi</td>
+                                <td>sriwijaya air </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary text-white">
+                                        <a href="detail_pengiriman.html" class="text-white"><svg width="1em"
+                                                height="1em" viewBox="0 0 16 16" class="bi bi-card-checklist"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
+                                            </svg></a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1018</th>
+                                <td>DYEG340392</td>
+                                <td>16-07-2020</td>
+                                <td>dimashudi</td>
+                                <td>sriwijaya air </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary text-white">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-checklist"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                            <path fill-rule="evenodd"
+                                                d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- akhir history pengiriman barang -->
+
+    <!-- awal footer -->
+
+    <footer class="section-footer mt-5 mb-4 border-top">
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-lg-3">
+                                    <h5>Layanan</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">Pengiriman Barang</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tracking Area</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Informasi Biaya</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <h5>Kemitraan</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Lowongan Kerja</a></li>
+                                        <li><a href="#">Daftar Promo</a></li>
+                                        <li><a href="#">Pelanggan</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <h5>Informasi Umum</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Profile Perusahaan</a></li>
+                                        <li><a href="#">Perusahaab Rekanan</a></li>
+                                        <li><a href="#">Media</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <h5>Get Connected</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Tangerang Kota</li>
+                                        <li>Indonesia</li>
+                                        <li>0821 - 2222 - 8888</li>
+                                        <li>support@skripsi.sriwijayaair.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center pt-4">
+                <div class="col-auto text-gray-500 font-weight-light text-center">
+                    2020 &copy; Copyright skripsi.sriwijaya air • All rights reserved •
+                    Made in Tangerang
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- akhir footer -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+</script>
+
+</html>
